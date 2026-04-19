@@ -13,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.marco242424.widgetlinelimitbug"
     },
     "android": {
       "adaptiveIcon": {
@@ -21,10 +22,26 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.marco242424.widgetlinelimitbug"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-widgets",
+        {
+          "widgets": [
+            {
+              "name": "LockWidget",
+              "displayName": "Line Limit Bug",
+              "description": "Reproduces lineLimit(3) only showing 2 lines",
+              "supportedFamilies": ["accessoryRectangular"]
+            }
+          ]
+        }
+      ]
+    ]
   }
 }
